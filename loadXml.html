@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function loadXmlFile(){
+				var xmlhttp = new XMLHttpRequest();
+				xmlhttp.open('GET', 'https://raw.github.com/stackmob/stackmob-customcode-java-examples/master/pom.xml', false);
+				xmlhttp.send();
+				var xmlDoc = xmlhttp.responseXML;
+				console.log(xmlDoc);
+				return xmlDoc;
+			}
+		</script>
+	</head>
+<body id="body" onload="loadXmlFile()">
+</body>
+</html>
